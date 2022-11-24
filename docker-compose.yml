@@ -1,14 +1,14 @@
 version: '3.5'
 services:
     backend:
-        image: your-company-backend
+        image: d1eac2e2e3ca #your-company-backend
         ports:
             - "80:80"
 
     mysql:
-        image: your-company-database
+        image: 9646e99069c3 #your-company-database
         ports:
-            - "3306:3306"
+            - "3308:3308"
         environment:
             MYSQL_ROOT_PASSWORD: RootPassword
             MYSQL_DATABASE: Company

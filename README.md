@@ -19,6 +19,8 @@ docker build -t company-database .
 
 Conferir que a imagem foi gerada:
 
+docker images ls
+
 ```
 docker images
 REPOSITORY              TAG       IMAGE ID       CREATED          SIZE
@@ -28,7 +30,7 @@ company-database        latest    89b38d78dc16   20 seconds ago   431MB
 ### 1.2 Rodando o Container
 
 ```bash
-docker run -d -p 3306:3306 --name company-database -e MYSQL_ROOT_PASSWORD=RootPassword company-database
+docker run -d -p 3308:3308 --name company-database -e MYSQL_ROOT_PASSWORD=RootPassword company-database
 ```
 
 Será possível consultar que o container está `up` usando o comando `docker ps`.
@@ -139,6 +141,10 @@ docker build -t company-backend .
 ```
 
 Conferir que a imagem foi gerada:
+
+docker images ps
+ou
+docker images --all
 
 ```
 docker images

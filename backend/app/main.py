@@ -17,7 +17,7 @@ async def get_employees():
         user='root',
         password='RootPassword',
         host='mysql',
-        port='3306',
+        port='3308',
         database='Company'
     )
     print('DB connected')
